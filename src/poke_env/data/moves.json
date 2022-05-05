@@ -794,7 +794,7 @@
   "pp": 15,
   "priority": -3,
   "flags": {"bullet": 1, "protect": 1},
-  "beforeTurnCallback": "beforeTurnCallback",
+  "priorityChargeCallback": "priorityChargeCallback",
   "condition": {
    "duration": 1,
    "onStart": "onStart",
@@ -2488,7 +2488,8 @@
   },
   "volatileStatus": "defensecurl",
   "condition": {
-   "noCopy": true
+   "noCopy": true,
+   "onRestart": () => null
   },
   "secondary": null,
   "target": "self",
@@ -3850,7 +3851,6 @@
   "pp": 5,
   "priority": 0,
   "flags": {"protect": 1},
-  "selfdestruct": "ifHit",
   "secondary": null,
   "target": "normal",
   "type": "Fighting",
@@ -4369,7 +4369,7 @@
   "pp": 20,
   "priority": -3,
   "flags": {"contact": 1, "protect": 1, "punch": 1},
-  "beforeTurnCallback": "beforeTurnCallback",
+  "priorityChargeCallback": "priorityChargeCallback",
   "beforeMoveCallback": "beforeMoveCallback",
   "condition": {
    "duration": 1,
@@ -8750,6 +8750,7 @@
   "volatileStatus": "minimize",
   "condition": {
    "noCopy": true,
+   "onRestart": () => null,
    "onSourceModifyDamage": "onSourceModifyDamage",
    "onAccuracy": "onAccuracy"
   },
@@ -11863,7 +11864,7 @@
   "pp": 5,
   "priority": -3,
   "flags": {"protect": 1},
-  "beforeTurnCallback": "beforeTurnCallback",
+  "priorityChargeCallback": "priorityChargeCallback",
   "onTryMove": "onTryMove",
   "condition": {
    "duration": 1,
