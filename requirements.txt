@@ -1,6 +1,6 @@
-gym
-numpy
-orjson
-requests
-tabulate
+gym==0.24.1
+numpy==1.*
+orjson==3.*
+requests==2.*
+tabulate==0.8.10
 websockets>=8.0
